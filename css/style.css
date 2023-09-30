@@ -1,0 +1,196 @@
+* {
+   box-sizing: border-box;
+}
+
+/* Top level styling */
+
+
+body {
+        font-family: "Garamond", Georgia, Arial, sans-serif;
+        line-height: 1.5;
+}
+
+.banner {
+        background-color: #CEEFF8;
+        border-bottom: 5px solid BLUE;
+        padding: 1em 1em 1em 1em; 
+}
+
+.primary-menu ul {
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  background-color:#345555;
+}
+.primary-menu a {
+  display: block;
+  padding: 1em 2em;
+  text-decoration:none;
+  font-family: "Garamond", Georgia, Arial, sans-serif;
+  color: #fff;
+  font-weight: bold;
+  background-color:#345555;
+}
+               
+         
+.primary-menu a:hover {
+  color:#CCCCCC;
+}        
+
+
+
+.primary-menu {
+   max-width: 100%;
+   height: auto;
+}
+
+
+h2 {
+background-color: #CEEFF8;
+padding: .5em .5em .5em .5em;
+
+}
+
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+.site-footer {
+        min-height: 4em;
+        background-color: #DCDCDC;
+        border-top: 1px solid #d8e0f7;
+}
+
+.container {
+		min-height: 4em;
+		background-color: #AA8DE2;
+}
+
+
+
+
+@media (min-width: 768px) 
+{
+
+.container {
+   	display: flex;
+ 	justify-content: space-evenly;
+	align-items: center;
+	}
+
+.primary-menu ul {
+    display: flex;
+  }
+
+
+/* Column and grid definitions */
+
+
+ .content-wrapper {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   grid-template-rows: auto auto minmax(6em,auto);
+   grid-template-areas: "banner banner" "main sidebar" "footer footer";
+} 
+  
+
+main {
+   grid-area: main;
+   padding: .2em .3em .2em .3em;
+   border-right: 1px solid #a09f9f;
+}
+
+.sidebar {
+   grid-area: sidebar;
+   padding: .2em .3em .2em .3em;
+   border-right: 1px solid #a09f9f;
+}
+
+.site-footer {
+   grid-area: footer;
+}
+
+	.media {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Top level styling for large display */
+
+body {
+      font-size: 120%;
+      line-height: 1.75;
+   }   
+   
+   
+.banner {
+		position: relative;
+	}	
+
+
+.banner img {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+
+	}   
+	
+
+ 
+.media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+	
+}
+
+.site-footer {
+		font-size: 80%;
+	}
+
+
+/* Table formatting */
+
+
+.pantry {
+  border-collapse: collapse;
+}
+
+.pantry caption {
+ color: green;
+ font-size: 125%;
+ }
+
+.pantry, .pantry td {
+  border: 1px solid #000;
+}
+
+.pantry th {
+ padding: 10px;
+}
+
+.pantry td {
+  padding: 6px;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+td:hover {
+  background: yellow;
+}
+
+.pantry tfoot {font-size: 80%;
+}
+
+

@@ -1,0 +1,79 @@
+* {
+   box-sizing: border-box;
+}
+
+a::after {
+  content: " (" attr(href) ")";
+}
+
+a[href^="#"], nav {
+  display: none;
+}
+
+body {
+        font-family: sans-serif;
+        font-size:0.8em;
+}
+
+
+.primary-menu ul {
+  display: flex;
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+}
+.primary-menu a {
+  display: block;
+  padding: 1em 1em;
+  text-decoration:none;
+  font-family:  Georgia, Arial, sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.banner img {
+  display: none;
+}
+
+.banner {font-size:0.8em;
+}
+
+img {
+  display: none;
+}
+
+
+.site-footer {
+        border-top: 1px solid #d8e0f7;
+}
+
+
+
+/* everything above this seems to be fine */
+
+
+
+.container {
+   	display: flex;
+ 	justify-content: space-evenly;
+	align-items: center;
+	}
+
+
+   
+   
+
+.site-footer {
+		font-size: 80%;
+	}
+
+
+
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+
+	
