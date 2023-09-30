@@ -1,0 +1,205 @@
+<?php include('includes/process.php');?>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>INFO240 Assignment 10 table</title>
+  <meta name="description" content="This is a page with a table for Assignment 10">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="print" href="css/print.css">
+
+</head>
+
+  <body>
+  
+
+
+	<div class="wrapper">
+		<header class="banner">
+   		<h1>Some stuff about Cooking</h1>
+   		
+   		<img class="bread" src="images/bread.jpg" alt="bread" width="128" height="128">
+   		
+   		
+		</header>
+		
+<nav class="primary-menu">
+   <ul>
+      <li><a href="index.php">Table</a></li>
+      <li><a href="list.php">List</a></li>
+      <li><a href="intrapage.php">Intra-page Links</a></li>
+   </ul>
+</nav>
+
+		
+
+	<div class="content-wrapper">
+
+		<main>
+
+		<h2>A Pantry</h2>
+
+<img class="bento" src="images/bento.jpg" alt="bento box" width="541" height="475">
+
+<p>“Pantry” is an antique word with an eternal logic: Cooking is simpler and faster when you already have the ingredients. We’ve identified three levels of pantries among our readers — essential, expanded and expert — so whether you’re beginning to cook, stretching toward new flavors or an old hand with wide-ranging tastes, you’ll be prepared. Our definition of pantry encompasses refrigerator, freezer and cupboard, so you can make entire meals with “pantry” items. We know that no two people will agree on a list of staples — one cook’s go-to ingredient may be new ground for another — but this is the stuff we believe you should keep on hand. For the most part, they’re ingredients that last. When you run low on potatoes or lemons, don’t wait to restock. Instead, put them on the shopping list so they’re always at the ready. 
+
+</p>
+
+<table class="pantry">
+
+	<caption>Stuff To Have in a Pantry</caption>
+
+	<thead>
+		<tr>
+      		<th>Oils and Vinegars</th>
+     		<th>Cans and Jars </th>
+      		<th>Spices and Dried herbs </th>
+  		</tr>
+   	</thead>
+   	
+	<tbody>  
+		<tr>
+      		<td>Extra-virgin olive oil</td>
+      		<td>Tuna in olive oil </td>
+      		<td>Kosher salt </td>
+      	</tr>
+   		<tr>
+      		<td>Neutral cooking oil</td>
+      		<td>Tomato paste</td>
+      		<td>Red-pepper flakes</td>
+   		</tr>
+		<tr>
+      		<td>Red wine vinegar</td>
+      		<td>Diced tomatoes</td>
+      		<td>Ground cayenne</td>
+   		</tr>
+		<tr>
+      		<td>White vinegar</td>
+      		<td>Tomato sauce</td>
+      		<td>Curry powder</td>
+   		</tr>
+		<tr>
+      		<td>Balsamic vinegar</td>
+      		<td>Chicken stock</td>
+      		<td>Bay leaves</td>
+   		</tr>
+	</tbody> 
+	   
+	   
+	   
+	   
+	<tfoot>
+      <tr>
+         <td colspan="3"><p> Source for this information: <a href="https://cooking.nytimes.com/guides/56-how-to-stock-a-modern-pantry/" 
+         target="_blank">NY Times Cooking Newsletter</a></p>
+          </td>
+      </tr>
+   </tfoot>
+	   
+</table>
+
+
+<?php print $formMessage;?>
+<form class="food-form" method="post">
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name">
+
+<label for="email">Email</label>
+<input type="text" id="email" name="email">
+ 
+<fieldset>
+ 
+        <legend>Crust</legend>
+ 
+        <label>Thick crust <input type="radio" name="crust" value="thick"></label>      
+
+        <label>Thin crust <input type="radio" name="crust" value="thin"></label>
+
+</fieldset>
+ 
+<fieldset>
+
+        <legend>Choose your Toppings</legend>
+       
+        <label>Pineapple <input type="checkbox" name="topping[]" value="pineapple"></label>
+               
+       
+        <label>Pepperoni <input type="checkbox" name="topping[]" value="pepperoni"></label>
+               
+       
+        <label>Mushroom <input type="checkbox" name="topping[]" value="mushroom"></label>
+  
+        
+        <label>Extra Cheese <input type="checkbox" name="topping[]" value="cheese"></label>
+
+
+        <label>Artichokes <input type="checkbox" name="topping[]" value="artichokes"></label>
+
+</fieldset>
+ 
+
+
+
+ 
+<label for="peppers">Red pepper flakes?</label>
+<select name="peppers" id="peppers">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+        <option value="lots">All you got</option>
+
+        
+ </select>
+
+ 
+ 
+    
+<label for="beer">Beer with that?</label>
+<select name="beer" id="beer">
+        <option value="no">Trying to be good</option>
+        <option value="yes">Heck yeah</option>
+        
+        
+</select>
+
+       
+<label for="comments">Special requests - but no promises</label>
+<textarea name="comments" id="comments"></textarea>
+
+<input type="submit" value="Submit form">
+
+
+</form>
+
+
+
+
+        </main>  <!-- end of main -->
+
+
+</div>
+
+<div class="container">
+
+	<div class="one">Baking</div>
+	<div class="two">Cooking</div>
+	<div class="three">Brewing</div>
+	<div class="four">Grilling</div>
+	<div class="five">Drinking</div>
+   
+
+</div> <!-- end of container div -->
+
+	<footer class="site-footer">
+<p>
+The source for both the Pantry and the Yogurt sections is: (https://cooking.nytimes.com/guides/56-how-to-stock-a-modern-pantry)
+</p>
+
+<?php include('includes/footer.php');?>
+	</footer>
+
+	</div> <!-- end of wrapper -->
+   </body>
+</html>
